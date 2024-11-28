@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'Indie Flower', cursive;
   background-color: #666666;
 }
@@ -23,7 +23,6 @@ body {
 .postit {
   background-color: #ffffcc;
   display: flex;
-  flex-direction: column;
   flex-basis: 21%;
   margin-bottom: 70px;
   height: 300px;
@@ -47,13 +46,13 @@ body {
 #postit5,
 #postit7 {
   background: linear-gradient(#fdfdcb 0%, #e8e9b2 75%, #bdbda3 93%);
-  transform: rotate(-5deg) scale(1); /* Rotazione iniziale */
+  transform: rotate(-5deg) scale(1);
 }
 
 #postit1:hover,
 #postit5:hover,
 #postit7:hover {
-  transform: rotate(0deg) scale(1.1); /* Torna alla rotazione di 0 gradi */
+  transform: rotate(0deg) scale(1.1);
 }
 
 /* Post-it verdi */
@@ -80,7 +79,7 @@ body {
   background: linear-gradient(
     rgb(204, 204, 255) 0%,
     rgb(176, 176, 204) 75%,
-    rgb(147 147 186) 93%
+    rgb(145, 145, 182) 93%
   );
   transform: rotate(-8deg) scale(1);
 }
