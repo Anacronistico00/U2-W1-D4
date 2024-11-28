@@ -6,13 +6,20 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: 'Indie Flower', cursive;
   background-color: #666666;
 }
 
 #container {
-  margin: 30px 60px;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#postits {
+  width: 80vw;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -25,7 +32,7 @@ body {
   display: flex;
   flex-basis: 21%;
   margin-bottom: 70px;
-  height: 300px;
+  height: 25vh;
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
@@ -46,23 +53,17 @@ body {
 }
 
 /* Post-it gialli */
-#postit1,
-#postit5,
-#postit7 {
+.yellow {
   background: linear-gradient(#fdfdcb 0%, #e8e9b2 75%, #bdbda3 93%);
   transform: rotate(-5deg) scale(1);
 }
 
-#postit1:hover,
-#postit5:hover,
-#postit7:hover {
+.yellow:hover {
   transform: rotate(0deg) scale(1.1);
 }
 
 /* Post-it verdi */
-#postit2,
-#postit4,
-#postit8 {
+.green {
   background: linear-gradient(
     rgb(204, 255, 204) 0%,
     rgb(184, 219, 184) 75%,
@@ -70,16 +71,12 @@ body {
   );
   transform: rotate(5deg) scale(1);
 }
-
-#postit2:hover,
-#postit4:hover,
-#postit8:hover {
+.green:hover {
   transform: rotate(0deg) scale(1.1);
 }
 
 /* Post-it viola */
-#postit3,
-#postit6 {
+.violet {
   background: linear-gradient(
     rgb(204, 204, 255) 0%,
     rgb(176, 176, 204) 75%,
@@ -88,7 +85,6 @@ body {
   transform: rotate(-8deg) scale(1);
 }
 
-#postit3:hover,
-#postit6:hover {
+.violet:hover {
   transform: rotate(0deg) scale(1.1);
 }
